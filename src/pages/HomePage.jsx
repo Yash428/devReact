@@ -7,6 +7,8 @@ import speech from '../assets/speech-bubble.png'
 import doubt from '../assets/doubt.png'
 import beat from '../assets/beat.png'
 import b1 from '../assets/b1.jpg'
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 function HomePage() {
   return (
     <div className='flex flex-col h-screen w-full'>
@@ -91,30 +93,45 @@ function HomePage() {
             </div>
         </div>
         <div id='testimonial' className='flex flex-col m-auto p-4 h-screen'>
-            <div className='flex w-full p-4 m-4'>
-                <span className='text-6xl text-orange-600 font-bold'>Kind Words From Our Students</span>
+            <div className='flex w-2/3  p-6 m-4'>
+                <span className='text-6xl text-orange-600 w-2/3 font-bold text-left'>Kind Words From Our Students</span>
             </div>
-            <div className='h-96'>
+            <div className=' h-56 '>
                 {' '}
             </div>
             <div className='flex flex-row justify-center text-orange-600 py-10 m-auto text-justify'>
                 <div className='flex flex-col w-1/4 px-3 py-2 mx-3'>
-                    <span className='mb-3'>It is a perfect website for the students of the CSPIT where we can easily solve our doubts and get connected with students. </span>
-                    <span className='font-semibold p-2'>Shivang</span>
+                    <span className='mb-3 text-xl'>It is a perfect website for the students of the CSPIT where we can easily solve our doubts and get connected with students. </span>
+                    <span className='font-bold text-xl p-2 pl-0'>Shivang</span>
                 </div>
                 <div className='flex flex-col w-1/4 px-3 py-2 mx-3'>
-                    <span className='mb-3'>It is a perfect website for the students of the CSPIT where we can easily solve our doubts and get connected with students. </span>
-                    <span className='font-semibold p-2'>Shivang</span>
+                    <span className='mb-3 text-xl'>It is a perfect website for the students of the CSPIT where we can easily solve our doubts and get connected with students. </span>
+                    <span className='font-bold text-xl p-2 pl-0'>Jay</span>
                 </div>
                 <div className='flex flex-col w-1/4 px-3 py-2 mx-3'>
-                    <span className='mb-3'>It is a perfect website for the students of the CSPIT where we can easily solve our doubts and get connected with students. </span>
-                    <span className='font-semibold p-2'>Shivang</span>
+                    <span className='mb-3 text-xl'>It is a perfect website for the students of the CSPIT where we can easily solve our doubts and get connected with students. </span>
+                    <span className='font-bold text-xl pl-0 p-2'>Yug</span>
                 </div>
             </div>
+            <div className='h-16'>
+                {' '}
+            </div>
         </div>
-        <div>
-            <div></div> 
-            <div></div> 
+        <div id='contact' className='flex flex-col justify-start h-screen m-4 p-4'>
+            <div className='w-2/5 p-6 m-4'>
+                <span className='text-6xl text-orange-600 w-2/3 font-bold text-left'>We would love to hear from you!</span>
+            </div> 
+            <div className='flex justify-left flex-row '>
+                <div className='flex flex-col p-8 text-orange-600 text-xl font-medium'>
+                    <div className='p-4 rounded-full bg-amber-200 m-3'><span className='p-2'>Phone: 9106158720</span></div>
+                    <div className='p-4 rounded-full bg-amber-200 m-3'><span className='p-2'>Email: 22ce079@charusat.edu.in</span></div>
+                    <div className='p-4 rounded-full bg-amber-200 m-3'><span className='flex flex-row items-center'>Social Media Platforms: <span className='p-1'><FaLinkedin className='' /></span> <span className='p-1'><FaSquareXTwitter /></span><span className='p-1'><FaInstagram /></span></span></div>
+                </div>
+                
+            </div> 
+            <div className='h-36'>
+                    {' '}
+                </div>
         </div>
     </div>
   )
